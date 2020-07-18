@@ -1,0 +1,78 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #292929;
+}
+
+/* header css starts */
+header {
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+header img {
+    width: 50px;
+    border-radius: 50%;
+}
+header .links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header a {
+    color: #292929;
+    margin-left: 30px;
+}
+header a.brand {
+    margin-left: 0px;
+}
+header a:hover {
+    color: #292929;
+}
+/* header css ends */
+/* hero section css starts */
+.hero-section {
+    text-align: center;
+    height: 100vh;
+    padding-top: 30vh;
+}
+.name {
+    font-size: 28px;
+    font-weight: bold;
+}
+.hero-section h1 {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+    margin-top: 35px;
+}
+.hero-section .social-links {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.hero-section .social-links a {
+    display: inline-block;
+}
+.hero-section .social-links img {
+    width: 40px;
+}
+/* hero section css ends */
+
+@media all and (max-width: 767px) and (min-width: 320px) {
+    .hero-section {
+        padding-top: 20vh;
+    }
+    .name {
+        font-size: 24px;
+    }
+    .hero-section h1 {
+        font-size: 36px;
+    }
+    .hero-section .social-links {
+        width: 100%;
+    }
+}
